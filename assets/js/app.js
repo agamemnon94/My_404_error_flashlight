@@ -1,4 +1,3 @@
-
 let torche = document.querySelector('.torch');
 
 let text = document.querySelector('.big_header');
