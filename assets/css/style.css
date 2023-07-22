@@ -10,6 +10,7 @@
 
 :root {
   --dark: rgba(51, 51, 51, 1);
+  --violine: rgb(113, 36, 165);
 }
 
 /********************/
@@ -86,4 +87,10 @@ span:nth-child(4) {
   color: #fff;
   font-size: clamp(2rem, 2vw, 4rem);
   margin-top: 15%;
+  transition: 0.3s;
+}
+
+.back_link:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid var(--violine);
 }
