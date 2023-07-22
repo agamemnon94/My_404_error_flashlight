@@ -21,6 +21,9 @@ html {
   font-size: 62.5%;
   font-family: "VT323", monospace;
   /* cursor: url(/assets/img/big_smile.png), auto; */
+
+  /* ↓ ici ça fonctionne */
+  /* cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; */
 }
 body {
   display: flex;
