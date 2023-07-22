@@ -72,6 +72,7 @@ span {
   font-size: clamp(16rem, 30vw, 25rem);
   color: white;
   transition: 0.5s ease-out;
+  user-select: none;
 }
 span:nth-child(4) {
   margin-left: 50px;

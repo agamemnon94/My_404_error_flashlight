@@ -7,22 +7,30 @@ sentence.forEach((el) => {
   text.innerHTML += `<span class="elements" >${el}</span>`;
 });
 
+
+let tLeft;
+let tTop;
+let rectTorche;
 /**
  * Fonction qui fait bouger le faisceau de la lampe torche
  * @param {*} e
  */
 let flashLight = (e) => {
   setTimeout(() => {
-    torche.style.top = e.pageY - 175 + "px";
-    torche.style.left = e.pageX - 175 + "px";
+    torche.style.top = e.pageY - 195 + "px";
+    torche.style.left = e.pageX - 200 + "px";
+    rectTorche = torche.getBoundingClientRect();
   }, 50);
-  const x = e.clientX;
-  const y = e.clientY;
+  // const x = e.clientX;
+  // const y = e.clientY;
+  const x = rectTorche.right - 70;
+  const y = rectTorche.top + 150;
 
   let spanElements = document.querySelectorAll('.elements');
 
   spanElements.forEach((el) => {
     const rect = el.getBoundingClientRect();
+    console.log(rect.left, 'Les lettres');
 
     if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
       el.classList.add('transformed');
