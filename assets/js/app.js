@@ -20,7 +20,7 @@ let flashLight = (e) => {
     torche.style.top = e.pageY - 195 + "px";
     torche.style.left = e.pageX - 200 + "px";
     // console.log(rectTorche);
-  }, 50);
+  }, 80);
   rectTorche = torche.getBoundingClientRect();
   let x = rectTorche.right - 70;
   let y = rectTorche.top + 150;
