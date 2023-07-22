@@ -21,8 +21,6 @@ let flashLight = (e) => {
     torche.style.left = e.pageX - 200 + "px";
     rectTorche = torche.getBoundingClientRect();
   }, 50);
-  // const x = e.clientX;
-  // const y = e.clientY;
   const x = rectTorche.right - 70;
   const y = rectTorche.top + 150;
 
